@@ -19,3 +19,10 @@
 .navbar-nav .nav-item {
   flex: 1;
 } */
+
+/* Logo Palma */
+.navbar .container .navbar-collapse .navbar-nav .nav-item > img {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 10px;
+}

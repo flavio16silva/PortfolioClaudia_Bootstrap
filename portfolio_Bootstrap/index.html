@@ -14,8 +14,8 @@
     <!-- CSS -->
     <link rel="stylesheet" href="css/extends.css" />
 
-  <div class="d-flex justify-content-center align-items-center">
-    <nav class="navbar navbar-expand-lg " data-bs-theme="custom">
+  <div class="d-flex flex-column wrapper">
+    <nav class="navbar navbar-expand-lg navbar-light bg-transparent fixed-top" data-bs-theme="custom">
       <div class="container d-flex justify-content-center align-items-center">
         <!-- <a class="navbar-brand" href="#">Navbar</a> -->
         <button class="navbar-toggler collapsed " type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
@@ -54,6 +54,123 @@
         </div>
       </div>
     </nav>
+
+    <div class="container-fluid carousel-container">
+        <div id="carouselMain" class="carousel slide carousel-dark" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselMain" data-bs-slide-to="0" class="active"></button>
+            <button type="button" data-bs-target="#carouselMain" data-bs-slide-to="1"></button>
+            <button type="button" data-bs-target="#carouselMain" data-bs-slide-to="2"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="3000" >
+              <img src="./assets/slider/farol.jpg" class="d-none d-md-block w-100" alt=" ">
+              <img src="./assets/slider/farolSmall.jpg" class="d-block d-md-none w-100" alt=" ">
+              <div class="carousel-caption ">
+                <span class="titulo_span display-3 text-white"> Supere Desafios com nossa ajuda</span>
+                <h2 class="titulo_h2 display-2 text-white">Descubra como transformar obstáculos em oportunidades</h2>
+                <p class="texto_p display-6 text-white">Na contagem regressiva da vida, cada desafio é um farol que ilumina o caminho para a superação.</p>
+              </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="3000">
+              <img src="./assets/slider/mao.jpg" class="d-none d-md-block w-100" alt=" ">
+              <img src="./assets/slider/maoSmall.jpg" class="d-block d-md-none w-100" alt=" ">
+              <div class="carousel-caption d-none d-md-block">
+                <span class="titulo_span">O tempo escorre em seus dedos</span>
+                  <h2 class="titulo_h2">Cada momento tem seu minuto de oportunidade</h2>
+                  <p class="texto_p">Na palma de sua mão, o tempo se desdobra como contagem do relógio. Te oriento a moldar cada momento para ser único e melhorado. </p>
+              </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="3000">
+              <img src="./assets/slider/montanhas.jpg" class="d-none d-md-block w-100" alt=" ">
+              <img src="./assets/slider/montanhasSmall.jpg" class="d-block d-md-none w-100" alt=" ">
+              <div class="carousel-caption d-none d-md-block">
+                <span class="titulo_span">Encontrando plenitude na união</span>
+                    <h2 class="titulo_h2">Caminhamos e superamos juntos os desafios da jornada.</h2>
+                    <p class="texto_p">Nas montanhas, encontramos imensidão; na distância, o vazio. Entre eles, descobrimos a plenitude da jornada.</p>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselMain" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+            <span class="visually-hidden">Anterior</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselMain" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+            <span class="visually-hidden">Próximo</span>
+          </button>
+        </div>
+        <!-- <hr class="mt-3"> -->
+    </div>
+
+    <footer class="text-muted bg-light" data-bs-theme="custom">
+      <div class="container">
+          <div class="row py-4">
+                  <div class="col-12 col-md-4 text-center mb-3">
+                    <h3>Por Claudia Palma </h3>
+                        <p>
+                          Obrigado por me visitar. <br />
+                          Acompanhe-me nas redes sociais. <br />
+                          <br />
+                        </p>             
+                  </div>
+
+                  <div class="col-12 col-md-4 text-center mb-3">
+                          <h3>Links Rápidos</h3>
+                              <a href="#slider"
+                                ><i class="fas fa-chevron-circle-right"></i> Home</a>
+                              <a href="#about"
+                                ><i class="fas fa-chevron-circle-right"></i> Sobre</a>
+                              <a href="#skills"
+                                ><i class="fas fa-chevron-circle-right"></i> Serviços</a>
+
+                              <a href="#services"
+                              ><i class="fas fa-chevron-circle-right"></i> Psicoterapia</a>
+
+                              <a href="#projects"
+                                ><i class="fas fa-chevron-circle-right"></i> Empresariais</a>
+
+                              <a href="#preco"
+                              ><i class="fas fa-chevron-circle-right"></i> Planos</a>
+
+                              <a href="#consultoria"
+                                ><i class="fas fa-chevron-circle-right"></i> Consultoria</a>
+                  </div> 
+                  
+                  <div class="col-12 col-md-4 text-center mb-3">
+                        <h3>Informações para Contato</h3>
+                        <p><i class="fas fa-phone"></i>+55 (71) 99836-2020</p>
+                        <p class="email_rodape"><i class="fas fa-envelope"></i>palmapsicologiaintegrada@gmail.com</p>
+                        <div class="share">
+                        <a
+                          href="#"
+                          class="fa fa-linkedin"
+                          aria-label="LinkedIn"
+                          target="_blank"
+                        ></a>
+                        <a
+                          href="#"
+                          class="fa fa-instagram"
+                          aria-label="Instagram"
+                          target="_blank"
+                        ></a>
+                        <a
+                        href="#"
+                        class="fa fa-whatsapp"
+                        aria-label="GitHub"
+                        target="_blank"
+                      ></a>
+                      <a
+                      href="#"
+                      class="fa fa-phone"
+                      aria-label="telefone"
+                      ></a>             
+                  </div>
+                  </div>
+          </div>
+      </div>
+
+    </footer>
 
   </div>
  

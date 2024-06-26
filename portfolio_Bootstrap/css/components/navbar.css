@@ -20,6 +20,11 @@
   flex: 1;
 } */
 
+.navbar {
+  position: relative;
+  z-index: 1000;
+}
+
 /* Logo Palma */
 .navbar .container .navbar-collapse .navbar-nav .nav-item > img {
   width: 105px;

@@ -26,8 +26,8 @@
 }
 
 /* Logo Palma */
-.navbar .container .navbar-collapse .navbar-nav .nav-item > img {
-  width: 105px;
-  height: 105px;
+.navbar .container-fluid .offcanvas .offcanvas-body .nav-item > img {
+  width: 101px;
+  height: 101px;
   margin-bottom: 10px;
 }

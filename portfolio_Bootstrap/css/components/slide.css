@@ -21,38 +21,63 @@
 } */
 
 .carousel-caption {
-  top: 7px; 
+  top: 150px; 
 }
 
 
-/* Responsividade das tags */
+/* Estilos padrão */
+.carousel-caption span,
+.carousel-caption h2,
+.carousel-caption p {
+    display: block;
+}
 
+/* Responsividade das tags abaixo de 767px */
 @media (max-width: 767px) {
-  .carousel-caption {
-      display: block;
-  }
-  .carousel-caption span,
-  .carousel-caption h2,
-  .carousel-caption p {
-      display: block;
-      font-size: 1rem;
-  }
-  .carousel-caption h2 {
-      font-size: 0.9rem;
-  }
+    .carousel-caption span,
+    .carousel-caption h2,
+    .carousel-caption p {
+        font-size: 1rem;
+    }
+    .carousel-caption h2 {
+        font-size: 0.9rem;
+    }
 }
 
+/* Responsividade das tags abaixo de 576px */
 @media (max-width: 576px) {
-  .carousel-caption {
-      display: block;
-  }
-  .carousel-caption span,
-  .carousel-caption h2,
-  .carousel-caption p {
-      display: block;
-      font-size: 0.7rem;
-  }
-  .carousel-caption h2 {
-      font-size: 0.7rem;
-  }
+    .carousel-caption span,
+    .carousel-caption h2,
+    .carousel-caption p {
+        font-size: 0.7rem;
+    }
+    .carousel-caption h2 {
+        font-size: 0.7rem;
+    }
+}
+
+/* Responsividade das tags acima de 767px */
+@media (min-width: 768px) {
+    .carousel-caption span {
+        font-size: 2rem; /* Ajuste conforme necessário */
+    }
+    .carousel-caption h2 {
+        font-size: 1.5rem; /* Ajuste conforme necessário */
+    }
+    .carousel-caption p {
+        font-size: 1.2rem; /* Ajuste conforme necessário */
+    }
+}
+
+/* Responsividade das tags acima de 1200px */
+@media (min-width: 1200px) {
+    .carousel-caption span {
+        font-size: 2.5rem; /* Ajuste conforme necessário */
+    }
+    .carousel-caption h2 {
+        font-size: 2rem; /* Ajuste conforme necessário */
+    }
+    .carousel-caption p {
+        font-size: 1.5rem; /* Ajuste conforme necessário */
+    }
 }

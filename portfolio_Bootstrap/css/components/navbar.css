@@ -31,3 +31,60 @@
   height: 101px;
   margin-bottom: 10px;
 }
+
+.navbar .container-fluid > img {
+  width: 101px;
+  height: 101px;
+  margin-bottom: 10px;
+}
+
+.navbar-nav {
+  background: transparent;
+}
+
+/* Aplicar somente ao menu hambúrguer */
+@media (max-width: 991.98px) {
+  .custom-offcanvas-width .offcanvas-body {
+    width: 200px; 
+    height: 90px; 
+  }
+
+  .custom-offcanvas-width {
+    max-width: 200px;  
+    height: 450px; 
+  }
+}
+
+/* Garantir que o alinhamento em dispositivos maiores permaneça centralizado */
+@media (min-width: 992px) {
+  .navbar-nav {
+    justify-content: center;
+    width: 100%;
+  }
+
+  .navbar-nav .nav-item {
+    margin-right: 2rem;
+  }
+
+  .navbar-nav .nav-item:last-of-type {
+    margin-right: 0;
+  }
+}
+
+/* Tratamento das Li */
+/* Cor, espessura e tipo */
+.barra {
+  color: #02073e; 
+  /* font-size: 14px;   */
+  /* padding: 15px; */
+  /* margin-bottom: 10px;  */
+  font-weight: bolder;   
+  text-transform: uppercase;
+}
+
+/* Espaçamento */
+.navbar .offcanvas .offcanvas-body li:not(:last-of-type) {
+  margin-right: 0.9rem;
+}
+
+

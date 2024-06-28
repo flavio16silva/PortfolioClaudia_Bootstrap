@@ -26,59 +26,59 @@
 
 
 /* Estilos padrão */
-.carousel-caption span,
-.carousel-caption h2,
-.carousel-caption p {
+.carousel-caption .titulo_span,
+.carousel-caption .titulo_h2,
+.carousel-caption .texto_p {
     display: block;
     font-weight: bold;
 }
 
 /* Responsividade das tags abaixo de 767px */
 @media (max-width: 767px) {
-    .carousel-caption span,
-    .carousel-caption h2,
-    .carousel-caption p {
+    .carousel-caption .titulo_span,
+    .carousel-caption .titulo_h2,
+    .carousel-caption .texto_p {
         font-size: 1rem;
     }
-    .carousel-caption h2 {
+    .carousel-caption .titulo_h2 {
         font-size: 0.9rem;
     }
 }
 
 /* Responsividade das tags abaixo de 576px */
 @media (max-width: 576px) {
-    .carousel-caption span,
-    .carousel-caption h2,
-    .carousel-caption p {
+    .carousel-caption .titulo_span,
+    .carousel-caption .titulo_h2,
+    .carousel-caption .texto_p {
         font-size: 0.7rem;
     }
-    .carousel-caption h2 {
+    .carousel-caption .titulo_h2 {
         font-size: 0.7rem;
     }
 }
 
 /* Responsividade das tags acima de 767px */
 @media (min-width: 768px) {
-    .carousel-caption span {
-        font-size: 2rem; /* Ajuste conforme necessário */
+    .carousel-caption .titulo_span {
+        font-size: 2rem; 
     }
-    .carousel-caption h2 {
-        font-size: 1.5rem; /* Ajuste conforme necessário */
+    .carousel-caption .titulo_h2 {
+        font-size: 1.5rem; 
     }
-    .carousel-caption p {
-        font-size: 1.2rem; /* Ajuste conforme necessário */
+    .carousel-caption .texto_p {
+        font-size: 1.2rem; 
     }
 }
 
 /* Responsividade das tags acima de 1200px */
 @media (min-width: 1200px) {
-    .carousel-caption span {
-        font-size: 2.5rem; /* Ajuste conforme necessário */
+    .carousel-caption .titulo_span {
+        font-size: 2.5rem; 
     }
-    .carousel-caption h2 {
-        font-size: 2rem; /* Ajuste conforme necessário */
+    .carousel-caption .titulo_h2 {
+        font-size: 2rem; 
     }
-    .carousel-caption p {
-        font-size: 1.5rem; /* Ajuste conforme necessário */
+    .carousel-caption .texto_p {
+        font-size: 1.5rem; 
     }
 }

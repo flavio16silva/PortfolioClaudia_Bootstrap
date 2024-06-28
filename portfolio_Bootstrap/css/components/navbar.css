@@ -21,8 +21,10 @@
 } */
 
 .navbar {
-  position: relative;
+  position: sticky;
+  top: 0;
   z-index: 1000;
+  background: transparent;
 }
 
 /* Logo Palma */
@@ -38,27 +40,24 @@
   margin-bottom: 10px;
 }
 
-.navbar-nav {
-  background: transparent;
-}
-
 /* Aplicar somente ao menu hambúrguer */
 @media (max-width: 991.98px) {
-  .custom-offcanvas-width .offcanvas-body {
-    width: 200px; 
-    height: 90px; 
-  }
-
   .custom-offcanvas-width {
     max-width: 200px;  
     height: 500px; 
   }
 
-  .custom-offcanvas-width .navbar-nav .nav-item {
-    /* padding-top: 0.3rem; */
-    padding-bottom: 0.3rem;
-    
+  .custom-offcanvas-width .offcanvas-body {
+    /* background-color: rgba(255, 255, 255, 0.5); */
+    width: 200px; 
+    height: 90px; 
   }
+
+  .offcanvas-body .navbar-nav .nav-item {
+    /* background-color: transparent;  */
+    padding-bottom: 0.3rem;
+  }
+
 }
 
 /* Garantir que o alinhamento em dispositivos maiores permaneça centralizado */

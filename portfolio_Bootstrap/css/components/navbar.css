@@ -51,7 +51,13 @@
 
   .custom-offcanvas-width {
     max-width: 200px;  
-    height: 450px; 
+    height: 500px; 
+  }
+
+  .custom-offcanvas-width .navbar-nav .nav-item {
+    /* padding-top: 0.3rem; */
+    padding-bottom: 0.3rem;
+    
   }
 }
 
@@ -82,7 +88,7 @@
   text-transform: uppercase;
 }
 
-/* Espaçamento */
+/* Espaçamento da li - Nomes */
 .navbar .offcanvas .offcanvas-body li:not(:last-of-type) {
   margin-right: 0.9rem;
 }

@@ -30,6 +30,7 @@
 .carousel-caption h2,
 .carousel-caption p {
     display: block;
+    font-weight: bold;
 }
 
 /* Responsividade das tags abaixo de 767px */

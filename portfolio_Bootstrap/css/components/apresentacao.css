@@ -77,135 +77,63 @@ header .header__left p {
   transition: transform 0.5s; 
 }
 
-/* .container .header__left .btn:hover i {
-  transform: translateX(15px); 
-  color:red; 
-} */
-
-
-.container .header__right .header__image {
-  position: relative;
-  line-height: 0;
-  
-}
-
-.container .header__right .header__image::after {
-  content: '';
-  display: block;
-  width: 100%;
-  height: 100%;
-  /* border: 1px solid var(--tertiary-color); */
-  position: absolute;
-  top: -1.5rem;
-  right: -1.5rem;
-  border-radius: 0.5rem;
-  z-index: -1;
-}
-
-.container .header__right .header__image .background {
-  position: absolute;
-  top: -4rem;
-  right: -4.5rem;
-  z-index: -1;
-  
-}
-
-/* @media only screen and (max-width: 768px) {
-  header {
-    flex-direction: column-reverse;
-    text-align: center;
-  }
-
-  header .header__left p {
-    margin: 2rem auto 4rem;
-  }
-} */
-
 
 /* ===== INICIO: FOTO COM ICONES ROTACIONAL ===== */
-/* Dimensões da imagem redonda */
-.img-c {
-  width: 110%;
-  height: auto;
-  }
 
 /* Section 1 */
-
-.main {
+/* .main {
   padding: 6rem 0;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(277px, 1fr));
   row-gap: 2rem;
   column-gap: 6rem;
   align-items: center;
+  } */
+
+  .rounding-sec {
+    position: relative;
+    height: 400px;
+    width: 400px;
   }
 
-  .main h3 {
-  color: #fff;
-  font-size: 1.5rem;
-  opacity: 0;
-  animation: topSideAni 1s ease forwards;
-  }
-
-  .main h1 {
-  color: #fff;
-  font-size: 4rem;
-  font-weight: 600;
-  opacity: 0;
-  animation: leftSideAni 1s ease forwards;
-  animation-delay: 1s;
-  }
-
-  .main button {
-  background-color: transparent;
-  color: var(--primary-color);
-  border: 2px solid var(--primary-color);
-  padding: 0.8rem 1rem;
-  font-size: 1.1rem;
-  border-radius: 7px;
-  margin-top: 2rem;
-  cursor: pointer;
-  }
-
+ /* Imagem da Claudia */
   .images {
-  margin-left: auto;
-  width: 290px;
-  position: absolute;
-  top: 55%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -webkit-transform: translate(-50%, -50%);
-  }   
+   width: 290px;
+   top: 55%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   -webkit-transform: translate(-50%, -50%);
+  }
 
-  .images img {
-  border-radius: 45%;
-  box-shadow: 0 0 10px #D1D9E6;
+ /*Div Interna - Dimensões da imagem redonda */
+.img-c {
+  width: 110%;
+  height: auto;
+  border-radius: 4%;
+  transition: .2s all linear;
+  box-shadow: 10px 10px 24px -12px rgba(0, 0, 0, 0.815);
+  filter: drop-shadow(2px 2px 15px rgba(0, 0, 0, 0.815));
   }
+
+
+
   
-  /* Section 1 End */
-  
-  /* Roundin sec */
-  .main {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  }
-  
-  .big-circle {
+  /* Section 1 End */  
+  /* Div do Cirulo rodando*/  
+  /* .big-circle {
   height: 110%;
   width: 110%;
-  position: relative;
-  border: 3px solid #bbbbbb;
+  border: 1px solid #bbbbbb;
   border-radius: 50%;
-  display: flex;
   display: -webkit-flex;
-  align-items: center;
-  -webkit-align-items: center;
-  animation: Rotate 20s linear infinite;
+   animation: Rotate 20s linear infinite;
   -webkit-animation: Rotate 20s linear infinite;
-  }
-  
-  .icon-block {
+  } */
+
+   
+
+  /*Icones das Redes Sociais girando  */
+  /* .icon-block {
   width: 64px;
   height: 64px;
   position: absolute;
@@ -214,18 +142,18 @@ header .header__left p {
   display: -webkit-flex;
   align-items: center;
   -webkit-align-items: center;
-  justify-content: center;
-  -webkit-justify-content: center;
   background-color: #fff;
   box-shadow: 0 0 10px #fff;
-  }
-  .icon-block img {
+  } */
+
+  /* .icon-block img {
   margin: 0px auto;
   width: 60%;
   animation: Rotate-reverse 20s linear infinite;
   -webkit-animation: Rotate-reverse 20s linear infinite;
-  }
-  .icon-block:first-child {
+  } */
+
+  /* .icon-block:first-child {
   top: 0;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -248,16 +176,11 @@ header .header__left p {
   left: 0;
   transform: translate(-50%, -50%);
   -webkit-transform: translate(-50%, -50%);
-  }
-  .rounding-sec {
-  position: relative;
-  height: 400px;
-  width: 400px;
-  }
+  } */
 
-  /* ===== keyframe animation ======= */
-  
-  @keyframes Rotate {
+
+  /* ===== keyframe animation ======= */  
+  /* @keyframes Rotate {
   from {
   transform: rotate(0deg);
   }
@@ -291,7 +214,7 @@ header .header__left p {
   to {
   -webkit-transform: rotate(0deg);
   }
-  }
+  } */
   
   /* ===== Animation ========== */
   @keyframes leftSideAni {
@@ -325,7 +248,7 @@ header .header__left p {
   }
   }
   
-  @media screen and (max-width: 1024px) {
+  /* @media screen and (max-width: 1024px) {
   .container {
   padding: 0 4.4rem;
   }
@@ -333,23 +256,23 @@ header .header__left p {
   color: #000;
   margin-top: 1rem;
   }
-  }
-  @media screen and (max-width: 990px) {
+  } */
+  /* @media screen and (max-width: 990px) {
   .main {
   grid-template-columns: repeat(auto-fit, minmax(420px, 1fr));
   }
   .rounding-sec {
   margin: auto;
   }
-  }
+  } */
   
-  @media screen and (max-width: 768px) {
+  /* @media screen and (max-width: 768px) {
   .container {
   padding: 0 1.6rem;
   }
-  }
+  } */
   
-  @media screen and (max-width:600px) {
+  /* @media screen and (max-width:600px) {
   body {
   height: auto;
   }
@@ -398,6 +321,8 @@ header .header__left p {
   .images {
   width: 200px;
   }
-  }
+  } */
 /* ===== FIM: FOTO COM ICONES ROTACIONAL ==== */
+
+
 

@@ -35,8 +35,40 @@ header .header__left p {
   padding: 0.1rem;
 } */
 
+
+.container .header__left .texto {
+  font-size: 2.5rem;
+  /* color: var(--primary-color); */
+  font-weight: 600;
+  /* padding: 0.1rem; */
+}
+
+.container .header__left h1{
+  font-size: 2.5rem;
+  margin-top: 50px;
+  text-align: justify;
+  /* color: var(--clau-color); */
+}
+
+.container .header__left .texto {
+  font-size: 2rem;
+  color: var(--primary-color);
+  font-weight: 600;
+  padding: 0.1rem;
+  
+}
+
+.container .header__left p {
+  margin-top: 2rem;
+  margin-bottom: 4rem;
+  max-width: 50rem;
+  text-align: justify;
+ 
+  
+}
+
 /* Seta do botão Saiba Mais */
-/* header .header__left .btn i {
+.container .header__left .btn i {
   
   margin-left: 0.4rem;
   font-size: 1.5rem;
@@ -44,18 +76,18 @@ header .header__left p {
  
 }
 
-header .header__left .btn:hover i {
+.container .header__left .btn:hover i {
   transform: translateX(10px); 
 }
 
 
-header .header__right .header__image {
+.container .header__right .header__image {
   position: relative;
   line-height: 0;
   
 }
 
-header .header__right .header__image::after {
+.container .header__right .header__image::after {
   content: '';
   display: block;
   width: 100%;
@@ -68,13 +100,13 @@ header .header__right .header__image::after {
   z-index: -1;
 }
 
-header .header__right .header__image .background {
+.container .header__right .header__image .background {
   position: absolute;
   top: -4rem;
   right: -4.5rem;
   z-index: -1;
   
-} */
+}
 
 /* @media only screen and (max-width: 768px) {
   header {
@@ -87,6 +119,7 @@ header .header__right .header__image .background {
   }
 } */
 
+
 /* ===== INICIO: FOTO COM ICONES ROTACIONAL ===== */
 /* Dimensões da imagem redonda */
 .img-c {
@@ -96,7 +129,7 @@ header .header__right .header__image .background {
 
 /* Section 1 */
 
-/* .main {
+.main {
   padding: 6rem 0;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(277px, 1fr));
@@ -130,7 +163,7 @@ header .header__right .header__image .background {
   border-radius: 7px;
   margin-top: 2rem;
   cursor: pointer;
-  } */
+  }
 
   .images {
   margin-left: auto;
@@ -166,8 +199,6 @@ header .header__right .header__image .background {
   display: -webkit-flex;
   align-items: center;
   -webkit-align-items: center;
-  /* justify-content: center; */
-  /* -webkit-justify-content: center; */
   animation: Rotate 20s linear infinite;
   -webkit-animation: Rotate 20s linear infinite;
   }
@@ -222,9 +253,9 @@ header .header__right .header__image .background {
   width: 400px;
   }
 
-  /* keyframe animation */
+  /* ===== keyframe animation ======= */
   
-  /* @keyframes Rotate {
+  @keyframes Rotate {
   from {
   transform: rotate(0deg);
   }
@@ -258,10 +289,10 @@ header .header__right .header__image .background {
   to {
   -webkit-transform: rotate(0deg);
   }
-  } */
+  }
   
-  /* Animation */
-  /* @keyframes leftSideAni {
+  /* ===== Animation ========== */
+  @keyframes leftSideAni {
   0% {
   transform: translateX(-100px);
   opacity: 0;
@@ -290,9 +321,9 @@ header .header__right .header__image .background {
   transform: translateY(0);
   opacity: 1;
   }
-  } */
+  }
   
-  /* @media screen and (max-width: 1024px) {
+  @media screen and (max-width: 1024px) {
   .container {
   padding: 0 4.4rem;
   }
@@ -314,9 +345,9 @@ header .header__right .header__image .background {
   .container {
   padding: 0 1.6rem;
   }
-  } */
+  }
   
-  /* @media screen and (max-width:600px) {
+  @media screen and (max-width:600px) {
   body {
   height: auto;
   }
@@ -365,90 +396,6 @@ header .header__right .header__image .background {
   .images {
   width: 200px;
   }
-  } */
-  
-
+  }
 /* ===== FIM: FOTO COM ICONES ROTACIONAL ==== */
 
-/*Estilizando a parte frontal*/
-/* .home {
-  position: relative;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1.5rem;
-  min-height: 100vh;
-  align-items: center;
-} */
-
-/* .home .imagem img {
-  width: 70%;
-  margin-left: 6rem;
-  border-radius: 50%;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
-  cursor: pointer;
-} */
-
-/* .home .imagem img:hover {
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
-} */
-
-/* .home .imagem img:hover {
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
-} */
-
-/* .home .imagem {
-  flex: 1 1 40rem;
-  z-index: 1;
-} */
-
-/* .home #particles-js {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-} */
-
-/* .header__left p { */
-  /*A propriedade flex do CSS, define como um ítem será posicionado para no 
-  espaço disponível dentro de seu container.*/
-  /* flex: 1 1 40rem;
-  padding-top: 1rem;
-  z-index: 1;
-} */
-
-/* .header__left::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-} */
-
-/* .header__left .conteudo h2 {
-  margin-top: 4rem;
-  font-size: 4rem;
-  font-weight: 800;
-  color: #002057;
-}
-
-.home .conteudo h2 span {
-  font-size: 5rem;
-  font-weight: 800;
-  color: #ff7b00;
-}
-
-.header__left .eu {
-  font-size: 2.5rem;
-  color: #000;
-  font-weight: 600;
-  padding: 1rem 0;
-}
-
-.home .conteudo p span {
-  font-size: 2.5rem;
-  color: rgb(148, 8, 8);
-  font-weight: 600;
-  padding: 1rem 0;
-} */

@@ -31,7 +31,8 @@
 }
 
 /* Descrição geral*/
-.servicos_paragrafo {
+.servicos_paragrafo,
+.description {
   color: #ffff;
   font-size: 1.1rem;
   text-align: center;

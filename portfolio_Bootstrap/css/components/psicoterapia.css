@@ -1,0 +1,115 @@
+
+/*Psicoterapia*/
+
+.row .icon-box .titulos {
+    color: var(--primary-color);
+    font-size: 14px;  
+    /* padding: 10px; */
+    /* margin-bottom: 10px;  */
+    /* font-weight: bold;   */
+    
+  }
+
+/* Titulo - h2 */
+.section-title h2 {
+  margin-top: 0;
+  font-size: 32px;
+  font-weight: bold;
+  line-height: 1.2;
+  position: relative;
+  margin-bottom: 30px;
+  color: var(--primary-color);
+  z-index: 2;
+  text-align: center;
+} 
+
+/* Paragrafo */
+.section-title p {
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 17px;
+}
+
+.row .icon-box {
+  padding: 10px;
+  position: relative;
+  overflow: hidden;
+  background: #fff;
+  box-shadow: 0 0 29px 0 rgba(68, 88, 144, 0.12);
+  transition: all 0.3s ease-in-out;
+  border-radius: 8px;
+  z-index: 1;
+  margin-bottom: 20px;
+}
+
+/* .row .icon-box .description {
+  position: relative; 
+  z-index: 2;
+} */
+
+.row .icon-box::before {
+  content: "";
+  position: absolute;
+  background: white;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  top: 100%;
+  transition: all 0.3s;
+  z-index: -1;
+}
+
+/* Ao passar do Mouse sobre o azul */
+.row .icon-box:hover::before {
+  background: #67b0d1;
+  top: 0;
+  border-radius: 0px;
+}
+
+/* Classe do Icone */
+.container .row .icon {
+  /* margin-bottom: 15px; */
+  /* margin-left: 10px; */
+  margin-top: -30px;
+}
+
+/* Icone */
+.container .row .icon i {
+  font-size: 40px;
+  line-height: 1;
+  color: #67b0d1;
+  transition: all 0.3s ease-in-out;
+  margin-left: -5px;
+}
+
+/* Titulo do Card */
+.row .title {
+  font-weight: 700;
+  /* margin-top: -57px; */
+  /* margin-left: 100px; */
+  /* margin-bottom: 15px; */
+  /* font-size: 30px; */
+  /* justify-content: center; */
+}
+
+.row .title a {
+  color: #111;
+}
+
+.row .description {
+  color: #000;
+  font-size: 15px;
+  line-height: 28px;
+  margin-top: 25px;
+  margin-bottom: 0;
+  text-align: justify;  
+}
+
+.row .icon-box:hover .title a,
+.row .icon-box:hover .description {
+  color: #fff;
+}
+
+.row .icon-box:hover .icon i {
+  color: #fff;
+}

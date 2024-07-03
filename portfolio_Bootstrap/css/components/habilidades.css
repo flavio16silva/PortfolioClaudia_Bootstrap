@@ -6,7 +6,7 @@
   background-color: #6db6f1;  
 }
 
- .container .column .image-container .foto {
+ .container .foto_quadro .image-container .foto {
   background-color: #fff;  
   transition: 0.2s;
   overflow: hidden;
@@ -14,12 +14,14 @@
 }
 
 /* Imagens dos Serviços Oferecidos - Ao passar do mouse */
-.container .column .image-container .foto:hover {
+.container .foto_quadro .image-container .foto:hover {
   box-shadow: 0 8px 10px rgba(93, 93, 94, 0.811) !important;
-  -webkit-transform: scale(1.1);
-  transform: scale(1.1);
+  -webkit-transform: scale(1.05);
+  transform: scale(1.05);
   -webkit-transition: all 0.3s ease;
   transition: all 0.5s ease;  
+  border-radius: 7%;
+  border: 3px solid #fff;
 }
 
 /* Titulo - Serviços Oferecidos */
@@ -33,23 +35,4 @@
   color: #ffff;
   font-size: 1.1rem;
   text-align: center;
-}
-
-
-
-
-
-
-/* Nome dos Serviços Oferecidos - Empresas, Recrutamento... */
-.skills .skills__content .skills__item h3 {
-  font-size:18px;
-  font-weight: 700;
-  color: var(--white)
-}
-
-/* Paragrafo descritivo dos serviços oferecidos */
-.skills .skills__content .skills__item p {
-  margin-top:25px;
-  color: var(--white)
-
 }

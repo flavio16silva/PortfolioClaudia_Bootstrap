@@ -1,9 +1,6 @@
 /* Serviços Oferecidos */
-
-/* Imagens dos Serviços Oferecidos */
-.habilidades {
-  width: 100%;
-  background-color: #6db6f1;  
+.titulo_servicos { 
+  color: #0f2137;
 }
 
  .container .foto_quadro .image-container .foto {
@@ -26,14 +23,16 @@
 
 /* Titulo - Serviços Oferecidos */
 .servicos_titulo {
-  color: #ffff;
+  color: #0f2137;
   font-size: 1.2rem;
 }
 
 /* Descrição geral*/
 .servicos_paragrafo,
 .description {
-  color: #ffff;
+  color: #0f2137;
   font-size: 1.1rem;
   text-align: center;
 }
+
+

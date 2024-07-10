@@ -53,4 +53,13 @@
   font-weight: 400;
 }
 
+/* Imagens */
+.img_card {
+  transition: transform 0.4s ease;
+}
+
+.img_card:hover {
+  transform: scale(0.9);
+}
+
 

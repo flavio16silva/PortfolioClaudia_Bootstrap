@@ -12,9 +12,10 @@
   text-align: justify;
 }
 
-
+/* #67b0d1 
+#d1cfcf*/
 .bg-full-width {
-  background: linear-gradient(to left, #ffffff, #d1cfcf); 
+  background: linear-gradient(to left, #ffffff, #a5cde0); 
   margin-left: -15px;
   margin-right: -15px;
   padding-left: 15px;
@@ -33,7 +34,7 @@
 }
 
 .bg-full-width:hover {
-  background: #d8d4d4ec;
+  background: #b3dbee;
   background-size: cover;
   margin-left: 5px;
   margin-right: 5px;
@@ -41,6 +42,15 @@
   padding-right: 5px;
   padding-top: 5px;
   transition: all 0.4s ease; 
+}
+
+.texto_completo {
+  color:black;
+}
+
+.texto_completo:hover {
+  color:#ffffff;
+  font-weight: 400;
 }
 
 

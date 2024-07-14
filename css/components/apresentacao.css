@@ -1,0 +1,328 @@
+/* header {
+  display: flex;
+  justify-content:start;
+  align-items: center;
+  gap: 0.3rem; 
+  scroll-margin-top: 20rem;
+    
+}
+
+header .header__left {
+  max-width: 62rem;
+  flex: 1;
+  
+}
+
+header .header__left h1{
+  font-size: 4rem;
+  margin-top: 50px;
+  color: var(--clau-color)
+}
+
+header .header__left p {
+  margin-top: 2rem;
+  margin-bottom: 4rem;
+  max-width: 50rem;
+  text-align: justify;
+  
+} */
+
+/* Escrita em JS - Hoje... */
+/* header .header__left .texto {
+  font-size: 2.5rem;
+  color: var(--primary-color);
+  font-weight: 600;
+  padding: 0.1rem;
+} */
+
+
+.container .header__left .texto {
+  font-size: 1.5rem;
+  /* color: var(--primary-color); */
+  font-weight: 600;
+  /* padding: 0.1rem; */
+}
+
+.container .header__left .escrever-texto {
+  font-size: 1.5rem;
+  /* color: var(--primary-color); */
+  font-weight: 600;
+  /* padding: 0.1rem; */
+}
+
+.container .header__left h1{
+  font-size: 2.5rem;
+  margin-top: 50px;
+  text-align: justify;
+  /* color: var(--clau-color); */
+}
+
+.container .header__left p {
+  margin-top: 2rem;
+  margin-bottom: 4rem;
+  max-width: 50rem;
+  text-align: justify; 
+  font-size: 1.1rem; 
+}
+
+/* Seta do botão Saiba Mais */
+.container .header__left .btn {
+    font-size: 1.2rem;   
+    padding:0.5rem 1.5rem; 
+  }
+
+.container .header__left .btn i {
+  /* padding-bottom: 2rem; */
+  font-size: 1.5rem;
+  transition: transform 0.5s; 
+}
+
+
+/* ===== INICIO: FOTO COM ICONES ROTACIONAL ===== */
+
+/* Section 1 */
+/* .main {
+  padding: 6rem 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(277px, 1fr));
+  row-gap: 2rem;
+  column-gap: 6rem;
+  align-items: center;
+  } */
+
+  .rounding-sec {
+    position: relative;
+    height: 400px;
+    width: 400px;
+  }
+
+ /* Imagem da Claudia */
+  .images {
+   width: 290px;
+   top: 55%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   -webkit-transform: translate(-50%, -50%);
+  }
+
+ /*Div Interna - Dimensões da imagem redonda */
+.img-c {
+  width: 110%;
+  height: auto;
+  border-radius: 4%;
+  transition: .2s all linear;
+  box-shadow: 10px 10px 24px -12px rgba(0, 0, 0, 0.815);
+  filter: drop-shadow(2px 2px 15px rgba(0, 0, 0, 0.815));
+  }
+
+
+
+  
+  /* Section 1 End */  
+  /* Div do Cirulo rodando*/  
+  /* .big-circle {
+  height: 110%;
+  width: 110%;
+  border: 1px solid #bbbbbb;
+  border-radius: 50%;
+  display: -webkit-flex;
+   animation: Rotate 20s linear infinite;
+  -webkit-animation: Rotate 20s linear infinite;
+  } */
+
+   
+
+  /*Icones das Redes Sociais girando  */
+  /* .icon-block {
+  width: 64px;
+  height: 64px;
+  position: absolute;
+  border-radius: 50%;
+  display: flex;
+  display: -webkit-flex;
+  align-items: center;
+  -webkit-align-items: center;
+  background-color: #fff;
+  box-shadow: 0 0 10px #fff;
+  } */
+
+  /* .icon-block img {
+  margin: 0px auto;
+  width: 60%;
+  animation: Rotate-reverse 20s linear infinite;
+  -webkit-animation: Rotate-reverse 20s linear infinite;
+  } */
+
+  /* .icon-block:first-child {
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  }
+  .icon-block:nth-child(2) {
+  top: 50%;
+  right: 0;
+  transform: translate(50%, -50%);
+  -webkit-transform: translate(50%, -50%);
+  }
+  .icon-block:nth-child(3) {
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  -webkit-transform: translate(-50%, 50%);
+  }
+  .icon-block:nth-child(4) {
+  top: 50%;
+  left: 0;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  } */
+
+
+  /* ===== keyframe animation ======= */  
+  /* @keyframes Rotate {
+  from {
+  transform: rotate(0deg);
+  }
+  to {
+  transform: rotate(360deg);
+  }
+  }
+  
+  @-webkit-keyframes Rotate {
+  from {
+  -webkit-transform: rotate(0deg);
+  }
+  to {
+  -webkit-transform: rotate(360deg);
+  }
+  }
+  
+  @keyframes Rotate-reverse {
+  from {
+  transform: rotate(360deg);
+  }
+  to {
+  transform: rotate(0deg);
+  }
+  }
+  
+  @-webkit-keyframes Rotate-reverse {
+  from {
+  -webkit-transform: rotate(360deg);
+  }
+  to {
+  -webkit-transform: rotate(0deg);
+  }
+  } */
+  
+  /* ===== Animation ========== */
+  @keyframes leftSideAni {
+  0% {
+  transform: translateX(-100px);
+  opacity: 0;
+  }
+  100% {
+  transform: translateX(0);
+  opacity: 1;
+  }
+  }
+  @keyframes navani {
+  0% {
+  transform: translateY(100px);
+  opacity: 0;
+  }
+  100% {
+  transform: translateY(0);
+  opacity: 1;
+  }
+  }
+  @keyframes topSideAni {
+  0% {
+  transform: translateY(-100px);
+  opacity: 0;
+  }
+  100% {
+  transform: translateY(0);
+  opacity: 1;
+  }
+  }
+  
+  /* @media screen and (max-width: 1024px) {
+  .container {
+  padding: 0 4.4rem;
+  }
+  .main h3 {
+  color: #000;
+  margin-top: 1rem;
+  }
+  } */
+  /* @media screen and (max-width: 990px) {
+  .main {
+  grid-template-columns: repeat(auto-fit, minmax(420px, 1fr));
+  }
+  .rounding-sec {
+  margin: auto;
+  }
+  } */
+  
+  /* @media screen and (max-width: 768px) {
+  .container {
+  padding: 0 1.6rem;
+  }
+  } */
+  
+  /* @media screen and (max-width:600px) {
+  body {
+  height: auto;
+  }
+  header {
+  height: auto;
+  background-color: var(--primary-dark);
+  }
+  
+  ul {
+  background: var(--primary-dark);
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  top: 3.4rem;
+  left: -100%;
+  z-index: 111111;
+  }
+  
+  .menu {
+  display: block;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--primary-color);
+  }
+  
+  #click:checked~ul {
+  left: 0%;
+  transition: all 0.3s ease;
+  }
+  .main {
+  grid-template-columns: repeat(auto-fit, minmax(266px, 1fr));
+  margin-top: 2rem;
+  overflow-x: hidden;
+  }
+  .icon-block {
+  width: 50px;
+  height: 50px;
+  }
+  .rounding-sec {
+  height: 300px;
+  width: 300px;
+  }
+  .images {
+  width: 200px;
+  }
+  } */
+/* ===== FIM: FOTO COM ICONES ROTACIONAL ==== */
+
+
+

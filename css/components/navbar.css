@@ -1,0 +1,95 @@
+/* .navbar {
+  justify-content: center;
+  align-items: center;
+}
+.navbar-toggler {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.navbar-collapse {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.navbar-nav {
+  width: 100%;
+  text-align: center;
+}
+.navbar-nav .nav-item {
+  flex: 1;
+} */
+
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: transparent;
+}
+
+/* Logo Palma */
+.navbar .container-fluid .offcanvas .offcanvas-body .nav-item > img {
+  width: 101px;
+  height: 101px;
+  margin-bottom: 10px;
+}
+
+.navbar .container-fluid > img {
+  width: 101px;
+  height: 101px;
+  margin-bottom: 10px;
+}
+
+/* Aplicar somente ao menu hambúrguer */
+@media (max-width: 991.98px) {
+  .custom-offcanvas-width {
+    max-width: 200px;  
+    height: 500px; 
+  }
+
+  .custom-offcanvas-width .offcanvas-body {
+    /* background-color: rgba(255, 255, 255, 0.5); */
+    width: 200px; 
+    height: 90px; 
+  }
+
+  .offcanvas-body .navbar-nav .nav-item {
+    /* background-color: transparent;  */
+    padding-bottom: 0.3rem;
+  }
+
+}
+
+/* Garantir que o alinhamento em dispositivos maiores permaneça centralizado */
+@media (min-width: 992px) {
+  .navbar-nav {
+    justify-content: center;
+    width: 100%;
+  }
+
+  .navbar-nav .nav-item {
+    margin-right: 2rem;
+  }
+
+  .navbar-nav .nav-item:last-of-type {
+    margin-right: 0;
+  }
+}
+
+/* Tratamento das Li */
+/* Cor, espessura e tipo */
+.barra {
+  color: #02073e; 
+  /* font-size: 14px;   */
+  /* padding: 15px; */
+  /* margin-bottom: 10px;  */
+  font-weight: bolder;   
+  text-transform: uppercase;
+}
+
+/* Espaçamento da li - Nomes */
+.navbar .offcanvas .offcanvas-body li:not(:last-of-type) {
+  margin-right: 0.9rem;
+}
+
+

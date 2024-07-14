@@ -1,0 +1,105 @@
+/*Psicoterapia*/
+/* .row .quadros {
+  width: 100%;  
+}  */
+
+.row .titulo_psico {
+  color: #02073e;
+  font-weight: bold;
+  line-height: 1.2;
+  margin-bottom: 30px;
+  z-index: 2;  
+}
+
+.row .paragrafo_psico {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 17px;
+}
+
+.row .icon-box .titulos {
+    color: #02073e;
+    font-size: 14px;  
+    font-weight: 700; 
+    margin-top: 12px;  
+  }
+
+.row .icon-box {
+  width: 100%; 
+  max-width: 305px;
+  height: 250px; 
+  padding: 10px;
+  position: relative;
+  overflow: hidden;
+  background: #fff;
+  box-shadow: 0 0 29px 0 rgba(71, 95, 160, 0.285);
+  transition: all 0.3s ease-in-out;
+  border-radius: 8px;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* margin-bottom: 15px; */
+}
+
+.row .icon-box::before {
+  content: "";
+  position: absolute;
+  background: white;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  top: 100%;
+  transition: all 0.3s;
+  z-index: -1;
+}
+
+/* Ao passar do Mouse sobre o azul */
+.row .icon-box:hover::before {
+  background: #67b0d1;
+  top: 0;
+  border-radius: 0px;
+}
+
+/* Icone */
+.row .icon i {
+  font-size: 40px;
+  line-height: 1;
+  color: #67b0d1;
+  transition: all 0.3s ease-in-out;   
+}
+
+.row .description {
+  color: #000;
+  font-size: 14px;
+  line-height: 28px;
+  margin-top: 25px;
+  text-align: justify;  
+}
+
+.row .icon-box:hover .titulos,
+.row .icon-box:hover .description {
+  color: #fff;
+}
+
+.row .icon-box:hover .icon i {
+  color: #fff;
+}
+
+@media (max-width: 767.98px) {
+  .container {
+    width: 100%;
+    padding-right: 0;
+    margin-left: 50px;
+  }
+
+  .quadros {
+    width: 100%;
+    padding-right: 0;
+  }
+  
+  .row .icon-box {
+    width: 100%;
+  }
+}

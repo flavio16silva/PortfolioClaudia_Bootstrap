@@ -4,5 +4,24 @@
 } */
 
 footer {
-  margin-top: auto;
+  margin-top: auto; 
+}
+
+.bg-footer{
+  background-color: #67b0d1;
+}
+
+.botao {
+  margin-top: 31px;
+}
+
+.botaoenviar{
+  margin-top: 33px;
+  margin-left: 3px;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.form-label{
+  color: #fff;
 }

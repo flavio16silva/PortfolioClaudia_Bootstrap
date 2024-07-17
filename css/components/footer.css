@@ -158,3 +158,30 @@ footer {
   border: 0.1rem solid rgb(242, 239, 239);
   color: #fff;
 }
+
+/* Direitos Reservados */
+.footer__copyright {
+  background-color: #fff;
+  padding: 25px 0;
+  font-size: 1rem;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  color: #02073e;
+ 
+}
+
+/* Designed by Flávio Silva */
+.credits {
+  padding: 0;
+  margin-bottom: 20px;
+  background-color:#fff;
+  text-align: center;
+  font-size: 15px;
+  color: #03073e;
+}
+
+/* Icone do Linkedin */
+.credits .fa {
+  margin-left: 5px;
+}

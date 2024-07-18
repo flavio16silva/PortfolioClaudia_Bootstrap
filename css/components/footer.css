@@ -56,6 +56,13 @@ footer {
   margin-bottom: 1.5rem;
 }
 
+/* Classe formulario - INPUT */
+.form-control {
+  padding: 12px 10px;
+  transition: 0.2s ease all;
+}
+
+
 /* Classe formulario - LABEL */
 .form-label {
   position: absolute;
@@ -68,21 +75,25 @@ footer {
   pointer-events: none;
 }
 
-/* Classe formulario - INPUT */
-.form-control {
-  padding: 12px 10px;
-  transition: 0.2s ease all;
+.form-control:focus + .form-label {
+  opacity: 0;
 }
 
-
-
 /* Classe formulario - Ao entrar do mouse */
-.form-control:focus + .form-label,
+.form-control:focus + .form-label, 
 .form-control:not(:placeholder-shown) + .form-label {
-  top: 0;
-  transform: translateY(-100%);
+  top: -20px;
+  left: 10px;
   font-size: 12px;
   color: #007bff;
+}
+
+.form-control:not(:focus):placeholder-shown + .form-label {
+  opacity: 1;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: initial;
+  color: #999;
 }
 
 

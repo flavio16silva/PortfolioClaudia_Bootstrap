@@ -11,7 +11,7 @@ footer {
   background-color: #6db6f1;
 }
 
-
+/* Botao - ENVIAR */
 .botaoenviar { 
   display: flex;
   justify-content: center;
@@ -26,12 +26,14 @@ footer {
   cursor: pointer;  
 }
 
+/* Botao - ENVIAR - passar do mouse */
 .botaoenviar:hover{
   background-color: #03073e;
   border: none;
   transition: all 0.5s;
 }
 
+/* SPAN - nome - ENVIAR */
 .btn_enviar {
  color: #03073e;
  display: block;
@@ -39,6 +41,7 @@ footer {
  text-align: center;
 }
 
+/* SPAN - nome - ENVIAR - passar do mouse  */
 .btn_enviar:hover {
   color: #fff;
   display: block;
@@ -46,36 +49,42 @@ footer {
   text-align: center;
  }
 
+
+/* Classe formulario */
 .form-group {
   position: relative;
   margin-bottom: 1.5rem;
 }
 
-.form-control {
-  padding: 12px 10px;
-  transition: 0.5s ease-in-out;
-}
-
-.form-label{
-  color: #fff;
+/* Classe formulario - LABEL */
+.form-label {
   position: absolute;
   top: 50%;
   left: 10px;
   transform: translateY(-50%);
   background: transparent;
+  transition: 0.2s ease all;
   color: #999;
   pointer-events: none;
-  transition: all 0.5s ease-in-out;
 }
 
+/* Classe formulario - INPUT */
+.form-control {
+  padding: 12px 10px;
+  transition: 0.2s ease all;
+}
+
+
+
+/* Classe formulario - Ao entrar do mouse */
 .form-control:focus + .form-label,
 .form-control:not(:placeholder-shown) + .form-label {
-  top: -20px;
-  left: 10px;
+  top: 0;
+  transform: translateY(-100%);
   font-size: 12px;
   color: #007bff;
-  opacity: 0; 
 }
+
 
 .footer_contato {
   padding-right: 3px;

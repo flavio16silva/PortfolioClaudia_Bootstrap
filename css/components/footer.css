@@ -59,7 +59,7 @@ footer {
 /* Classe formulario - INPUT */
 .form-control {
   padding: 12px 10px;
-  transition: 0.2s ease all;
+  transition: 0.5s ease-in-out;
 }
 
 
@@ -70,7 +70,7 @@ footer {
   left: 10px;
   transform: translateY(-50%);
   background: transparent;
-  transition: 0.2s ease all;
+  transition: 0.5s ease-in-out;
   color: #999;
   pointer-events: none;
 }

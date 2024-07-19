@@ -1,14 +1,12 @@
-/* footer {
-  background-color: #f8f9fa;
-  padding: 1rem 0;
-} */
-
 footer {
   margin-top: auto; 
 }
 
 .bg-footer{
   background-color: #6db6f1;
+  padding-top: 5px;
+  position: relative;
+  z-index: 0;
 }
 
 /* Botao - ENVIAR */
@@ -81,7 +79,8 @@ footer {
 
 /* Classe formulario - Ao entrar do mouse */
 .form-control:focus + .form-label, 
-.form-control:not(:placeholder-shown) + .form-label {
+.form-control:not(:placeholder-shown) + 
+.form-label {
   top: -20px;
   left: 10px;
   font-size: 12px;
@@ -204,3 +203,4 @@ footer {
 .credits .fa {
   margin-left: 5px;
 }
+

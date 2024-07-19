@@ -4,6 +4,7 @@ body {
   width: 100%; */
   min-width: 372px;
   /* margin-top: 10px; */
+  overflow-x: hidden;
 }
 
 .wrapper {
@@ -12,3 +13,4 @@ body {
   flex-direction: column; */
   /* position: relative; */
 }
+

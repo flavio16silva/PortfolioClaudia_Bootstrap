@@ -1,16 +1,12 @@
-body {
-  /* height: 100%;
-  margin: 0;
-  width: 100%; */
-  min-width: 372px;
-  /* margin-top: 10px; */
-  overflow-x: hidden;
+body{
+  font-family: 'Roboto', sans-serif;
 }
 
-.wrapper {
-  min-height: 100vh;
-  /* display: flex;
-  flex-direction: column; */
-  /* position: relative; */
+.row {
+  margin: 0;
+}
+
+.container {
+  padding: 70px 0;
 }
 
